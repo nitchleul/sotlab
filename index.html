@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOT MindGuard AI | Smart Learning Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="container">
+  <div class="navbar">
+    <div class="logo">
+      <div class="logo-icon">
+        <i class="fas fa-brain"></i>
+      </div>
+      <div>
+        <h1>SOT MindGuard AI</h1>
+        <span>Your Intelligent Study Assistant</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#" class="active">Chat</a>
+      <a href="#">Study Tools</a>
+      <a href="#">Documents</a>
+      <a href="#">Help</a>
+      <button class="btn-outline" onclick="window.location.href='sotlab.html'">
+        <i class="fas fa-home"></i> Back to Sot Lab
+      </button>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="chat-container">
+      <div id="chatBox" class="chat-box">
+        <div class="message bot">
+          <i class="fas fa-robot"></i> Hello! I'm SOT MindGuard AI, your dedicated study assistant. I can help you understand documents, create study notes, and even generate quizzes to test your knowledge. What would you like to learn today?
+        </div>
+      </div>
+      <div class="input-area">
+        <input type="text" id="userInput" placeholder="Ask your AI tutor...">
+        <input type="file" id="pdfFile" accept="application/pdf">
+        <button id="sendButton">
+          <i class="fas fa-paper-plane"></i> Send
+        </button>
+      </div>
+    </div>
+
+    <div class="ai-panel">
+      <div class="avatar">
+        <i class="fas fa-robot"></i>
+      </div>
+      <h2>SOT MindGuard AI</h2>
+      <p>Developed by <strong>LEUL MULAT</strong> and <strong>NATHAN BIRHANE</strong>. I'm here to help you understand documents, create study notes, and generate quizzes to test your knowledge.</p>
+      <div class="features-list">
+        <div class="feature-item">
+          <i class="fas fa-file-alt"></i>
+          <span>Document Analysis</span>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-pen-fancy"></i>
+          <span>Study Notes Creation</span>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-question-circle"></i>
+          <span>Quiz Generation</span>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-chart-line"></i>
+          <span>Progress Tracking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="students">
+    <h2><i class="fas fa-users"></i> Our Learning Community</h2>
+    <div class="student-grid">
+      <div class="student-card">
+        <i class="fas fa-user-graduate"></i>
+        <h4>2,500+ Active Students</h4>
+      </div>
+      <div class="student-card">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h4>50+ Verified Teachers</h4>
+      </div>
+      <div class="student-card">
+        <i class="fas fa-book-open"></i>
+        <h4>1,200+ Study Notes</h4>
+      </div>
+    </div>
+  </section>
+
+  <div class="study-card">
+    <h2><i class="fas fa-hourglass-half"></i> Study Session Timer</h2>
+    <div class="progress-container">
+      <div id="progressBar"></div>
+    </div>
+    <div id="time">25:00</div>
+    <div class="time-input">
+      <input type="number" id="minutesInput" value="25" min="1" max="120">
+      <button id="setTimeBtn"><i class="fas fa-check"></i> Set</button>
+    </div>
+    <div class="buttons">
+      <button id="startTimerBtn"><i class="fas fa-play"></i> Start</button>
+      <button id="pauseTimerBtn"><i class="fas fa-pause"></i> Pause</button>
+      <button id="resetTimerBtn"><i class="fas fa-redo"></i> Reset</button>
+    </div>
+    <div class="streak">
+      <i class="fas fa-fire"></i> <span id="streak">0</span> day study streak
+    </div>
+    <button id="streakBtn"><i class="fas fa-calendar-check"></i> I Studied Today</button>
+  </div>
+
+  <footer>
+    <p><i class="far fa-copyright"></i> SOT MindGuard AI — Developed by LEUL MULAT & NATHAN BIRHANE</p>
+    <p style="margin-top: 10px; font-size: 0.8rem;">Powered by Ollama (phi3 model) | Backend Server: localhost:3002</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

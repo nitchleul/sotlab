@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* This creates the soft pastel gradient background */
+    background: linear-gradient(135deg, #3b568c 0%, #3f5fbf 50%, #fff0f5 100%);
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+/* --- Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.nav-buttons button {
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.btn-orange { background-color: #ffb366; color: white; }
+.btn-teal { background-color: #00b0ad; color: white; }
+.hero-section {
+    display: flex;
+    padding: 50px 5%;
+    align-items: center;
+    gap: 40px;
+    color: #f0f0f0;  
+}
+
+.hero-content {
+    flex: 1;
+    color: #ddd;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffb366;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.author-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.author-name { font-weight: 600; font-size: 14px; }
+.meta { font-size: 12px; color: #ffffff; }
+
+/* --- Image Card --- */
+.hero-image-container {
+    flex: 1;
+}
+
+.image-card {
+    background: #fff;
+    border-radius: 20px;
+    height: 400px;
+    width: 100%;
+    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.8); /* The black drop shadow */
+    overflow: hidden;
+}
+
+.placeholder-img {
+    background: #f0f0f0;
+    height: 100%;
+    width: 100%;
+}
+/* Container for the two-column layout */
+.article-layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 5%;
+    gap: 60px; /* Space between sidebar and text */
+    background-color: #ffffff; /* Clean white background for reading */
+}
+
+/* --- Sidebar Styling --- */
+.sidebar {
+    flex: 1;
+    min-width: 300px;
+}
+
+.toc-box {
+    background-color: #f2f2ed; /* The light beige/grey from your pic */
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.toc-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.toc-box ul {
+    list-style: none;
+}
+
+.toc-box li {
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.toc-box a {
+    text-decoration: none;
+    color: #444;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.cta-text {
+    font-size: 2.5rem;
+    margin-top: 30px;
+    line-height: 1.1;
+    color: #1a1a1a;
+}
+
+/* --- Main Content Styling --- */
+.content-body {
+    flex: 2;
+}
+
+.category-label {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.content-body h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.content-body p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* --- Contact Info Box --- */
+.contact-info-card {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-left: 6px solid #00b0ad; /* Matches the teal from the header */
+    border-radius: 8px;
+}
+
+.info-header {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.contact-details {
+    margin-top: 15px;
+    font-weight: 600;
+}
